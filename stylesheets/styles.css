@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -6,8 +6,412 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
+}
+
+.Main__Home {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main__Home__card {
+  height: 32rem;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__Home__card.pds {
+  background: url(../assets/home_pds.svg) no-repeat center/20rem;
+}
+
+.Main__Home__card.pds:hover {
+  color: #88d3f3;
+}
+
+.Main__Home__card.wrs {
+  background: url(../assets/home_wrs.svg) no-repeat center/20rem;
+}
+
+.Main__Home__card.wrs:hover {
+  color: #2baae1;
+}
+
+.Main__Home__card.vce {
+  background: url(../assets/home_vce.svg) no-repeat center/20rem;
+}
+
+.Main__Home__card.vce:hover {
+  color: #0b6386;
+}
+
+.Main__Home__card.pd {
+  background: url(../assets/home_pd.svg) no-repeat center/20rem;
+}
+
+.Main__Home__card.pd:hover {
+  color: #0483b6;
+}
+
+.Main__Home__card span {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.Main__Home__card:hover {
+  background-size: 21rem;
+}
+
+.Main__Home .Brochure {
+  border-top: solid 0.1rem #2BAAE1;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.Main__Home .Brochure img {
+  margin-right: 2rem;
+  margin-top: 4rem;
+  width: 10rem;
+}
+
+.Main__Home .Brochure h1 {
+  color: #2BAAE1;
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+.Main__Home .Brochure a {
+  text-decoration: none;
+  color: #333;
+}
+
+.Main__Home .Video {
+  height: calc(100vh - 18rem);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
+.Main__Home .Video__player {
+  background: url(../assets/video-bg.jpg) no-repeat center/contain;
+  height: calc(100vh - 18rem);
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main__Home .Video .background {
+  position: absolute;
+  height: calc(100vh - 18rem);
+  background: #000;
+  width: 80%;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .Main__Home {
+    height: unset;
+    margin-top: 4rem;
+  }
+  .Main__Home .Video {
+    height: unset;
+    position: static;
+    padding: 0;
+  }
+  .Main__Home .Video__player {
+    height: unset;
+    position: static;
+    background-size: cover;
+    height: 30rem;
+  }
+  .Main__Home .Video .background {
+    height: unset;
+    position: static;
+  }
+  .Main__Home__card {
+    height: 22rem;
+    background-size: 14rem !important;
+    background-position: top center !important;
+  }
+  .Main__Home .Rws {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Main__Home .Brochure {
+    border-bottom: solid 0.1rem #2BAAE1;
+    padding-bottom: 4rem;
+  }
+  .Main__Home .Brochure img {
+    width: 6rem;
+  }
+  .Main__Home .Brochure h1 {
+    font-size: 3rem;
+  }
+  .Main__Home .Brochure p {
+    font-size: 1.6rem;
+  }
+}
+
+.Banner {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  height: 18rem;
+}
+
+.Banner h1 {
+  font-size: 5rem;
+  color: #70D5F8;
+}
+
+.Main__Pds {
+  height: calc(100vh - 36rem);
+}
+
+.Main__Pds [class*="col"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main__Pds__cards {
+  width: 36rem;
+  height: 30rem;
+  border: solid 0.4rem #70D5F8;
+  position: relative;
+  text-align: center;
+  font-size: 2.8rem;
+  padding-top: 18rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__Pds__cards:hover {
+  color: #2BAAE1;
+  border-color: #2BAAE1;
+}
+
+.Main__Pds__cards:hover .icons {
+  top: 65%;
+}
+
+.Main__Pds__cards:hover .icons__book {
+  background: #2BAAE1 url(../assets/book_white.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards:hover .icons__dollar {
+  background: #2BAAE1 url(../assets/dollar_white.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards:hover:before {
+  top: 0;
+}
+
+.Main__Pds__cards:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+  top: 50%;
+  margin-top: -5rem;
+  left: 50%;
+  margin-left: 16rem;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__Pds__cards .icons {
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -9rem;
+  top: 50%;
+  margin-top: -24rem;
+  font-size: 2.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__Pds__cards .icons__book {
+  background: #70D5F8 url(../assets/book.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards .icons__dollar {
+  background: #70D5F8 url(../assets/dollar.svg) no-repeat center/12rem;
+}
+
+.Main__Pds .Cta {
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.Main__Pds .Cta:hover {
+  color: #FFC400;
+}
+
+.Main__Pds .Cta:hover:before {
+  background: url(../assets/bulb_yellow.svg) no-repeat center/contain;
+}
+
+.Main__Pds .Cta:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -4rem;
+  width: 8rem;
+  height: 8rem;
+  top: -9rem;
+  background: url(../assets/bulb.svg) no-repeat center/contain;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .Main__Pds {
+    height: unset;
+    margin-top: 4rem;
+  }
+  .Main__Pds__cards {
+    margin-top: 8rem;
+  }
+  .Main__Pds__cards:before {
+    width: 2rem;
+  }
+  .Main__Pds__cards .icons {
+    top: 65%;
+  }
+  .Main__Pds .Cta {
+    margin-top: 15rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.Main__Pd {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main__Pd__info {
+  padding-right: 4rem;
+}
+
+.Main__Pd h1 {
+  font-size: 8rem;
+  color: #0083B7;
+  font-weight: 600;
+  position: relative;
+}
+
+.Main__Pd h1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #0083B7;
+}
+
+.Main__Pd p {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+}
+
+.Main__Pd p span {
+  color: #2BAAE1;
+}
+
+.Main__Pd .Form {
+  background: #000;
+  padding: 4rem 12rem 4rem 4rem;
+}
+
+.Main__Pd .Form h1 {
+  color: #70D5F8;
+  font-size: 6rem;
+  margin-bottom: 6rem;
+}
+
+.Main__Pd .Form h1:before {
+  display: none;
+}
+
+.Main__Pd .Form p {
+  color: #70D5F8;
+}
+
+.Main__Pd .Form input {
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  height: 5rem;
+}
+
+.Main__Pd .Form .btn {
+  background: #2BAAE1;
+  color: #fff;
+  border-radius: 0.8rem;
+  border: 0;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.Main__Pd .Form .btn:hover {
+  background: #0083B7;
+}
+
+.Main__Pd .Back {
+  background: url(../assets/pd-bg.jpg) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100vh - 18rem);
+}
+
+@media (max-width: 576px) {
+  .Main__Pd {
+    height: unset;
+    margin-top: 4rem;
+  }
+  .Main__Pd__info {
+    padding: 2rem 4rem;
+  }
+  .Main__Pd h1 {
+    font-size: 6rem;
+  }
+  .Main__Pd .Back {
+    position: static;
+    height: 18rem;
+  }
+  .Main__Pd .Form {
+    padding: 4rem;
+  }
 }
 
 html {
@@ -20,7 +424,7 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -58,112 +462,6 @@ html {
 
 main {
   position: relative;
-}
-
-.Main {
-  height: calc(100vh - 18rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Main__card {
-  height: 32rem;
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  transition: all 0.3s ease-in-out;
-}
-
-.Main__card.pds {
-  background: url(../assets/home_pds.svg) no-repeat center/20rem;
-}
-
-.Main__card.pds:hover {
-  color: #88d3f3;
-}
-
-.Main__card.wrs {
-  background: url(../assets/home_wrs.svg) no-repeat center/20rem;
-}
-
-.Main__card.wrs:hover {
-  color: #2baae1;
-}
-
-.Main__card.vce {
-  background: url(../assets/home_vce.svg) no-repeat center/20rem;
-}
-
-.Main__card.vce:hover {
-  color: #0b6386;
-}
-
-.Main__card.pd {
-  background: url(../assets/home_pd.svg) no-repeat center/20rem;
-}
-
-.Main__card.pd:hover {
-  color: #0483b6;
-}
-
-.Main__card span {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-}
-
-.Main__card:hover {
-  background-size: 21rem;
-}
-
-.Main .Brochure {
-  border-top: solid 0.1rem #2BAAE1;
-  margin-top: 2rem;
-  font-size: 3rem;
-}
-
-.Main .Brochure img {
-  margin-right: 2rem;
-  margin-top: 4rem;
-  width: 10rem;
-}
-
-.Main .Brochure h1 {
-  color: #2BAAE1;
-  font-size: 5rem;
-  margin-top: 3rem;
-}
-
-.Main .Brochure a {
-  text-decoration: none;
-  color: #333;
-}
-
-.Main .Video {
-  height: calc(100vh - 18rem);
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.Main .Video__player {
-  background: url(../assets/video-bg.jpg) no-repeat center/contain;
-  height: calc(100vh - 18rem);
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Main .Video .background {
-  position: absolute;
-  height: calc(100vh - 18rem);
-  background: #000;
-  width: 80%;
-  right: 0;
 }
 
 .Footer {
@@ -224,47 +522,6 @@ main {
   }
   .Header .Tagline h1 {
     font-size: 1.4rem;
-  }
-  .Main {
-    height: unset;
-    margin-top: 4rem;
-  }
-  .Main .Video {
-    height: unset;
-    position: static;
-    padding: 0;
-  }
-  .Main .Video__player {
-    height: unset;
-    position: static;
-    background-size: cover;
-    height: 30rem;
-  }
-  .Main .Video .background {
-    height: unset;
-    position: static;
-  }
-  .Main__card {
-    height: 22rem;
-    background-size: 14rem !important;
-    background-position: top center !important;
-  }
-  .Main .Rws {
-    display: flex;
-    justify-content: space-around;
-  }
-  .Main .Brochure {
-    border-bottom: solid 0.1rem #2BAAE1;
-    padding-bottom: 4rem;
-  }
-  .Main .Brochure img {
-    width: 6rem;
-  }
-  .Main .Brochure h1 {
-    font-size: 3rem;
-  }
-  .Main .Brochure p {
-    font-size: 1.6rem;
   }
   .Footer {
     position: static;

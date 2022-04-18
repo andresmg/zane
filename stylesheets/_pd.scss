@@ -1,0 +1,115 @@
+.Main {
+    &__Pd {
+    height: calc(100vh - 18rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__info {
+        padding-right: 4rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+        color: $zane_blue_dark;
+        font-weight: 600;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20rem;
+            height: 0.5rem;
+            background-color: $zane_blue_dark;
+        }
+    }
+
+    p {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+
+        span {
+            color: $zane_blue;
+        }
+    }
+
+    .Form {
+        background: $zane_black;
+        padding: 4rem 12rem 4rem 4rem;
+
+        h1 {
+            color: $zane_blue_light;
+            font-size: 6rem;
+            margin-bottom: 6rem;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        p {
+            color: $zane_blue_light;
+        }
+
+        input {
+            border: 0;
+            border-radius: 0.8rem;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            height: 5rem;
+        }
+
+        .btn {
+            background: $zane_blue;
+            color: $zane_white;
+            border-radius: 0.8rem;
+            border: 0;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+
+            &:hover {
+                background: $zane_blue_dark;
+            }
+        }
+    }
+
+    .Back {
+        background: url(../assets/pd-bg.jpg) no-repeat center / cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: calc(100vh - 18rem);
+    }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .Main {
+        &__Pd {
+        height: unset;
+        margin-top: 4rem;
+
+        &__info {
+            padding: 2rem 4rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        .Back {
+            position: static;
+            height: 18rem;
+        }
+
+        .Form {
+            padding: 4rem;
+        }
+        }
+
+    }
+}
