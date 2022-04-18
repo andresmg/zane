@@ -1,0 +1,295 @@
+@import 'variables';
+@import 'fonts';
+
+html {
+    font-size: 10px;
+}
+
+.Button {
+    background: $zane_blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $zane_white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: $zane_blue_dark;
+        color: $zane_white;
+    }
+}
+
+.Header {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    height: 9rem;
+
+    .Logo {
+        background: url(../assets/zane_logo.svg) no-repeat center / contain;
+        height: 9rem;
+        margin-left: 2rem;
+    }
+
+    .Tagline {
+        text-align: center;
+        color: $zane-blue;
+
+        span {
+            font-weight: 400;
+            color: $zane_text;
+        }
+    }
+
+    .Button {
+        height: 9rem;
+    }
+}
+
+main {
+    position: relative;
+}
+
+.Main {
+    height: calc(100vh - 18rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__card {
+        height: 32rem;
+        position: relative;
+        text-decoration: none;
+        color: $zane_text;
+        transition: all 0.3s ease-in-out;
+
+        &.pds {
+            background: url(../assets/home_pds.svg) no-repeat center / 20rem;
+            &:hover {
+                color: #88d3f3;
+            }
+        }
+
+        &.wrs {
+            background: url(../assets/home_wrs.svg) no-repeat center / 20rem;
+            &:hover {
+                color: #2baae1;
+            }
+        }
+
+        &.vce {
+            background: url(../assets/home_vce.svg) no-repeat center / 20rem;
+            &:hover {
+                color: #0b6386;
+            }
+        }
+
+        &.pd {
+            background: url(../assets/home_pd.svg) no-repeat center / 20rem;
+            &:hover {
+                color: #0483b6;
+            }
+        }
+
+        span {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+        }
+
+        &:hover {
+            background-size: 21rem;
+        }
+    }
+
+    .Brochure {
+        border-top: solid 0.1rem $zane_blue;
+        margin-top: 2rem;
+        font-size: 3rem;
+
+        img {
+            margin-right: 2rem;
+            margin-top: 4rem;
+            width: 10rem;
+        }
+
+        h1 {
+            color: $zane_blue;
+            font-size: 5rem;
+            margin-top: 3rem;
+        }
+        a {
+            text-decoration: none;
+            color: $zane_text;
+        }
+    }
+
+    .Video {
+        height: calc(100vh - 18rem);
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &__player {
+        background: url(../assets/video-bg.jpg) no-repeat center / contain;
+        height: calc(100vh - 18rem);
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .background {
+            position: absolute;
+            height: calc(100vh - 18rem);
+            background: $zane_black;
+            width: 80%;
+            right: 0;
+        }
+    }
+}
+
+.Footer {
+    background: $zane_blue;
+    color: $zane_white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    [class*="col"] {
+        height: 9rem;
+        display:flex;
+        align-items: center;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                color: $zane_white;
+                margin-left: 2rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $zane_text;
+                }
+            }
+        }
+    }
+
+    small {
+        padding-right: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .Header {
+        height: unset;
+
+        .Logo {
+            margin-left: 0;
+            height: 6rem;
+            background-size: 80%;
+        }
+
+        .Button {
+            height: 6rem;
+        }
+
+        .Tagline {
+            padding: 1rem 2rem;
+            border-top: solid 0.1rem $zane_blue;                
+
+            h1 {
+            font-size: 1.4rem;
+            }
+        }
+    }
+
+    .Main {
+        height: unset;
+        margin-top: 4rem;
+
+        .Video {
+            height: unset;
+            position: static;
+            padding: 0;
+            
+            &__player {
+                height: unset;
+                position: static;
+                background-size: cover;
+                height: 30rem;
+                }
+        
+                .background {
+                    height: unset;
+                    position: static;
+                }
+        }
+
+        &__card {
+            height: 22rem;
+            background-size: 14rem !important;
+            background-position: top center !important;
+        }
+
+        .Rws {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .Brochure {
+            border-bottom: solid 0.1rem $zane_blue;
+            padding-bottom: 4rem;
+
+            img {
+                width: 6rem;
+            }
+    
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .Footer {
+        position: static;
+        
+        [class*="col"] {
+            height: unset;
+        }
+
+        .nav {
+            padding: 1rem 0;
+            border-bottom: solid 0.1rem $zane_white;
+
+            ul {
+                margin: 0;
+            }
+        }
+
+        .copy {
+            justify-content: center;
+            padding: 0.4rem;
+        }
+    }
+}

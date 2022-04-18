@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.Button {
+  background: #2BAAE1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button:hover {
+  background: #0083B7;
+  color: #fff;
+}
+
+.Header {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  height: 9rem;
+}
+
+.Header .Logo {
+  background: url(../assets/zane_logo.svg) no-repeat center/contain;
+  height: 9rem;
+  margin-left: 2rem;
+}
+
+.Header .Tagline {
+  text-align: center;
+  color: #2BAAE1;
+}
+
+.Header .Tagline span {
+  font-weight: 400;
+  color: #333;
+}
+
+.Header .Button {
+  height: 9rem;
+}
+
+main {
+  position: relative;
+}
+
+.Main {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main__card {
+  height: 32rem;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__card.pds {
+  background: url(../assets/home_pds.svg) no-repeat center/20rem;
+}
+
+.Main__card.pds:hover {
+  color: #88d3f3;
+}
+
+.Main__card.wrs {
+  background: url(../assets/home_wrs.svg) no-repeat center/20rem;
+}
+
+.Main__card.wrs:hover {
+  color: #2baae1;
+}
+
+.Main__card.vce {
+  background: url(../assets/home_vce.svg) no-repeat center/20rem;
+}
+
+.Main__card.vce:hover {
+  color: #0b6386;
+}
+
+.Main__card.pd {
+  background: url(../assets/home_pd.svg) no-repeat center/20rem;
+}
+
+.Main__card.pd:hover {
+  color: #0483b6;
+}
+
+.Main__card span {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.Main__card:hover {
+  background-size: 21rem;
+}
+
+.Main .Brochure {
+  border-top: solid 0.1rem #2BAAE1;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.Main .Brochure img {
+  margin-right: 2rem;
+  margin-top: 4rem;
+  width: 10rem;
+}
+
+.Main .Brochure h1 {
+  color: #2BAAE1;
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+.Main .Brochure a {
+  text-decoration: none;
+  color: #333;
+}
+
+.Main .Video {
+  height: calc(100vh - 18rem);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.Main .Video__player {
+  background: url(../assets/video-bg.jpg) no-repeat center/contain;
+  height: calc(100vh - 18rem);
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main .Video .background {
+  position: absolute;
+  height: calc(100vh - 18rem);
+  background: #000;
+  width: 80%;
+  right: 0;
+}
+
+.Footer {
+  background: #2BAAE1;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.Footer [class*="col"] {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+}
+
+.Footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.Footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.Footer ul li a:hover {
+  color: #333;
+}
+
+.Footer small {
+  padding-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.Footer .copy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  .Header {
+    height: unset;
+  }
+  .Header .Logo {
+    margin-left: 0;
+    height: 6rem;
+    background-size: 80%;
+  }
+  .Header .Button {
+    height: 6rem;
+  }
+  .Header .Tagline {
+    padding: 1rem 2rem;
+    border-top: solid 0.1rem #2BAAE1;
+  }
+  .Header .Tagline h1 {
+    font-size: 1.4rem;
+  }
+  .Main {
+    height: unset;
+    margin-top: 4rem;
+  }
+  .Main .Video {
+    height: unset;
+    position: static;
+    padding: 0;
+  }
+  .Main .Video__player {
+    height: unset;
+    position: static;
+    background-size: cover;
+    height: 30rem;
+  }
+  .Main .Video .background {
+    height: unset;
+    position: static;
+  }
+  .Main__card {
+    height: 22rem;
+    background-size: 14rem !important;
+    background-position: top center !important;
+  }
+  .Main .Rws {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Main .Brochure {
+    border-bottom: solid 0.1rem #2BAAE1;
+    padding-bottom: 4rem;
+  }
+  .Main .Brochure img {
+    width: 6rem;
+  }
+  .Main .Brochure h1 {
+    font-size: 3rem;
+  }
+  .Main .Brochure p {
+    font-size: 1.6rem;
+  }
+  .Footer {
+    position: static;
+  }
+  .Footer [class*="col"] {
+    height: unset;
+  }
+  .Footer .nav {
+    padding: 1rem 0;
+    border-bottom: solid 0.1rem #fff;
+  }
+  .Footer .nav ul {
+    margin: 0;
+  }
+  .Footer .copy {
+    justify-content: center;
+    padding: 0.4rem;
+  }
+}
