@@ -1,0 +1,121 @@
+.Main {
+    &__Vce {
+    height: calc(100vh - 18rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        &__info {
+
+            h1 {
+                font-size: 5rem;
+                color: $zane_blue_dark;
+                font-weight: 600;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 20rem;
+                    height: 0.5rem;
+                    background-color: $zane_blue_dark;
+                }
+            }
+
+            h3 {
+                text-transform: uppercase;
+                margin: 4rem 0 2rem 0;
+                font-size: 2rem;
+            }
+        }
+
+        &__Table {
+            margin-top: 4rem;
+        
+            &__Head {
+                background: $zane_blue_dark;
+                color: $zane_white;
+                padding: 2rem;
+            }
+
+            &__Body {
+                background: $zane_blue_light;
+                color: $zane_text;
+                padding: 2rem;
+
+                ul {
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 1rem;
+
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            width: 1.4rem;
+                            height: 1.4rem;
+                            background: url(../assets/check.svg) no-repeat center / contain;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 7rem;
+                height: 7rem;
+                margin-bottom: 2rem;
+            }
+
+            h6 {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+
+        &__Video {
+            border: solid $zane_black 0.7rem;
+            border-radius: 0.8rem;
+            height: 60%;
+            background: $zane_black url(../assets/video-bg.jpg) no-repeat center / contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .background {
+                position: absolute;
+                height: 120%;
+                width: 50%;
+                background: $zane_blue_dark;
+                z-index: -1;
+                content: '';
+                display: block;
+                top: -10%;
+                left: 50%;
+                margin-left: -25%;
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 576px) {
+
+    .Main {
+        &__Vce {
+        height: unset;
+        margin-top: 4rem;
+        }
+
+    }
+}

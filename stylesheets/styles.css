@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Main__Pd h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   color: #0083B7;
   font-weight: 600;
   position: relative;
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Main__Pd p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-top: 4rem;
 }
 
@@ -411,6 +411,118 @@ h1, h2, h3, h4, h5, h6 {
   }
   .Main__Pd .Form {
     padding: 4rem;
+  }
+}
+
+.Main__Vce {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main__Vce__info h1 {
+  font-size: 5rem;
+  color: #0083B7;
+  font-weight: 600;
+  position: relative;
+}
+
+.Main__Vce__info h1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #0083B7;
+}
+
+.Main__Vce__info h3 {
+  text-transform: uppercase;
+  margin: 4rem 0 2rem 0;
+  font-size: 2rem;
+}
+
+.Main__Vce__Table {
+  margin-top: 4rem;
+}
+
+.Main__Vce__Table__Head {
+  background: #0083B7;
+  color: #fff;
+  padding: 2rem;
+}
+
+.Main__Vce__Table__Body {
+  background: #70D5F8;
+  color: #333;
+  padding: 2rem;
+}
+
+.Main__Vce__Table__Body ul {
+  padding: 0;
+  list-style: none;
+}
+
+.Main__Vce__Table__Body ul li {
+  margin-bottom: 1rem;
+}
+
+.Main__Vce__Table__Body ul li:before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../assets/check.svg) no-repeat center/contain;
+}
+
+.Main__Vce__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Main__Vce__icon img {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 2rem;
+}
+
+.Main__Vce__icon h6 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Main__Vce__Video {
+  border: solid #000 0.7rem;
+  border-radius: 0.8rem;
+  height: 60%;
+  background: #000 url(../assets/video-bg.jpg) no-repeat center/contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Main__Vce__Video .background {
+  position: absolute;
+  height: 120%;
+  width: 50%;
+  background: #0083B7;
+  z-index: -1;
+  content: '';
+  display: block;
+  top: -10%;
+  left: 50%;
+  margin-left: -25%;
+}
+
+@media (max-width: 576px) {
+  .Main__Vce {
+    height: unset;
+    margin-top: 4rem;
   }
 }
 
