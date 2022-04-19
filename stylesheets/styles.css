@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 .Main__Vce__info h1:before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   left: 0;
   width: 20rem;
   height: 0.5rem;
@@ -523,6 +523,28 @@ h1, h2, h3, h4, h5, h6 {
   .Main__Vce {
     height: unset;
     margin-top: 4rem;
+  }
+  .Main__Vce__info {
+    padding: 2rem;
+  }
+  .Main__Vce__info h1 {
+    font-size: 4rem;
+  }
+  .Main__Vce__icons {
+    margin: 4rem 0;
+  }
+  .Main__Vce__icon {
+    margin-bottom: 4rem;
+  }
+  .Main__Vce__icon img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .Main__Vce__Video {
+    height: 30rem;
+    margin-bottom: 4rem;
+    border-radius: 0;
   }
 }
 

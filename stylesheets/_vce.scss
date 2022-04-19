@@ -16,7 +16,7 @@
                 &:before {
                     content: '';
                     position: absolute;
-                    bottom: 0;
+                    bottom: -1rem;
                     left: 0;
                     width: 20rem;
                     height: 0.5rem;
@@ -115,7 +115,33 @@
         &__Vce {
         height: unset;
         margin-top: 4rem;
-        }
 
+            &__info {
+                padding: 2rem;
+
+                h1 {
+                    font-size: 4rem;
+                }
+            }
+
+            &__icons {
+                margin: 4rem 0;
+            }
+
+            &__icon {
+                margin-bottom: 4rem;
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &__Video {
+                height: 30rem;
+                margin-bottom: 4rem;
+                border-radius: 0;
+            }
+        }
     }
 }
