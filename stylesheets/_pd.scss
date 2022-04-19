@@ -9,23 +9,6 @@
         padding-right: 4rem;
     }
 
-    h1 {
-        font-size: 6rem;
-        color: $zane_blue_dark;
-        font-weight: 600;
-        position: relative;
-
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 20rem;
-            height: 0.5rem;
-            background-color: $zane_blue_dark;
-        }
-    }
-
     p {
         font-size: 2rem;
         margin-top: 4rem;

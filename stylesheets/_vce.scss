@@ -7,23 +7,6 @@
 
         &__info {
 
-            h1 {
-                font-size: 5rem;
-                color: $zane_blue_dark;
-                font-weight: 600;
-                position: relative;
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: -1rem;
-                    left: 0;
-                    width: 20rem;
-                    height: 0.5rem;
-                    background-color: $zane_blue_dark;
-                }
-            }
-
             h3 {
                 text-transform: uppercase;
                 margin: 4rem 0 2rem 0;
@@ -118,10 +101,6 @@
 
             &__info {
                 padding: 2rem;
-
-                h1 {
-                    font-size: 4rem;
-                }
             }
 
             &__icons {

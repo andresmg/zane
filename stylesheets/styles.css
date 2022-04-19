@@ -10,6 +10,29 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1.title {
+  font-size: 6rem;
+  color: #0083B7;
+  font-weight: 600;
+  position: relative;
+}
+
+h1.title:before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #0083B7;
+}
+
+@media (max-width: 576px) {
+  h1.title {
+    font-size: 4rem;
+  }
+}
+
 .Main__Home {
   height: calc(100vh - 18rem);
   display: flex;
@@ -319,23 +342,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 4rem;
 }
 
-.Main__Pd h1 {
-  font-size: 6rem;
-  color: #0083B7;
-  font-weight: 600;
-  position: relative;
-}
-
-.Main__Pd h1:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 20rem;
-  height: 0.5rem;
-  background-color: #0083B7;
-}
-
 .Main__Pd p {
   font-size: 2rem;
   margin-top: 4rem;
@@ -419,23 +425,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.Main__Vce__info h1 {
-  font-size: 5rem;
-  color: #0083B7;
-  font-weight: 600;
-  position: relative;
-}
-
-.Main__Vce__info h1:before {
-  content: '';
-  position: absolute;
-  bottom: -1rem;
-  left: 0;
-  width: 20rem;
-  height: 0.5rem;
-  background-color: #0083B7;
 }
 
 .Main__Vce__info h3 {
@@ -527,9 +516,6 @@ h1, h2, h3, h4, h5, h6 {
   .Main__Vce__info {
     padding: 2rem;
   }
-  .Main__Vce__info h1 {
-    font-size: 4rem;
-  }
   .Main__Vce__icons {
     margin: 4rem 0;
   }
@@ -545,6 +531,155 @@ h1, h2, h3, h4, h5, h6 {
     height: 30rem;
     margin-bottom: 4rem;
     border-radius: 0;
+  }
+}
+
+.Main__Resources {
+  height: calc(100vh - 18rem);
+}
+
+.Main__Resources__column {
+  height: calc(100vh - 18rem);
+  background: url(../assets/column-bg.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+.Main__Resources__column:before {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  left: -10rem;
+  width: 10rem;
+  height: calc(74vh);
+  background: #000;
+}
+
+.Main__Resources__buttons {
+  height: calc(74vh);
+  background: #000;
+  margin-top: 5rem;
+}
+
+.Main__Resources__buttons .button {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 20rem;
+}
+
+.Main__Resources__buttons .button.topbtn {
+  background: #000 url(../assets/students_whhite.svg) no-repeat center 2rem/14rem;
+}
+
+.Main__Resources__buttons .button.topbtn.active {
+  background: #2BAAE1 url(../assets/student.svg) no-repeat center 2rem/14rem;
+}
+
+.Main__Resources__buttons .button.bttmbtn {
+  background: #000 url(../assets/teacher_whhite.svg) no-repeat center 6rem/14rem;
+}
+
+.Main__Resources__buttons .button.bttmbtn.active {
+  background: #2BAAE1 url(../assets/teacher.svg) no-repeat center 6rem/14rem;
+}
+
+.Main__Resources__buttons .button.active {
+  color: #333;
+  pointer-events: none;
+}
+
+.Main__Resources__buttons .button:hover {
+  cursor: pointer;
+}
+
+.Main__Resources__buttons .button p {
+  margin-top: 2rem;
+}
+
+.Main__Resources__info {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Main__Resources__info h1 {
+  margin-bottom: 4rem;
+}
+
+.Main__Resources__icons {
+  margin-top: 4rem;
+}
+
+.Main__Resources__icons .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Main__Resources__icons .icon h6 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Main__Resources__icons .icon img {
+  width: 8rem;
+  height: 8rem;
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 0 !important;
+  }
+  .Main__Resources {
+    height: unset;
+  }
+  .Main__Resources__column {
+    height: 30rem;
+    background-position: center -10rem;
+  }
+  .Main__Resources__column:before {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    left: -10rem;
+    width: 10rem;
+    height: calc(74vh);
+    background: #000;
+  }
+  .Main__Resources__buttons {
+    margin-top: 0;
+    height: unset;
+  }
+  .Main__Resources__buttons .button {
+    width: 50%;
+    height: unset;
+    padding: 12rem 2rem 2rem 2rem;
+    text-align: center;
+  }
+  .Main__Resources__buttons .button.topbtn {
+    background: #000 url(../assets/students_whhite.svg) no-repeat center 2rem/7rem;
+  }
+  .Main__Resources__buttons .button.topbtn.active {
+    background: #2BAAE1 url(../assets/student.svg) no-repeat center 2rem/7rem;
+  }
+  .Main__Resources__buttons .button.bttmbtn {
+    background: #000 url(../assets/teacher_whhite.svg) no-repeat center 3rem/7rem;
+  }
+  .Main__Resources__buttons .button.bttmbtn.active {
+    background: #2BAAE1 url(../assets/teacher.svg) no-repeat center 3rem/7rem;
+  }
+  .Main__Resources__info {
+    padding-bottom: 0;
+  }
+  .Main__Resources__icons .icon {
+    margin-bottom: 4rem;
   }
 }
 
