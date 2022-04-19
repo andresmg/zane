@@ -777,6 +777,37 @@ h1.title:before {
 @media (max-width: 576px) {
   .Main__Includes {
     height: unset;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+  .Main__Includes__left h1 {
+    font-size: 4rem;
+  }
+  .Main__Includes__left h2 {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+  .Main__Includes__left h2:before {
+    width: 140%;
+    height: 11.2rem;
+    top: 0;
+    left: -20%;
+    z-index: -1;
+  }
+  .Main__Includes .order {
+    width: 100%;
+    height: 14rem;
+    padding: 2rem 0;
+    margin-top: 6rem;
+  }
+  .Main__Includes .order h1 {
+    font-size: 5rem;
+    width: 120%;
+    margin-left: -60%;
+    left: 50%;
+  }
+  .Main__Includes .order h3 {
+    font-size: 3rem;
   }
 }
 
