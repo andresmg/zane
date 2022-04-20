@@ -891,49 +891,49 @@ h1.title:before {
   justify-content: space-between;
 }
 
-.Main__OurStory__Timeline .col-2 {
+.Main__OurStory__Timeline [class*='col'] {
   text-align: center;
   font-size: 1.4rem;
 }
 
-.Main__OurStory__Timeline .col-2.blue1 h4 {
+.Main__OurStory__Timeline [class*='col'].blue1 h4 {
   color: #70D5F8;
 }
 
-.Main__OurStory__Timeline .col-2.blue1 h4:before {
+.Main__OurStory__Timeline [class*='col'].blue1 h4:before {
   background: #70D5F8;
 }
 
-.Main__OurStory__Timeline .col-2.blue2 h4 {
+.Main__OurStory__Timeline [class*='col'].blue2 h4 {
   color: #2BAAE1;
 }
 
-.Main__OurStory__Timeline .col-2.blue2 h4:before {
+.Main__OurStory__Timeline [class*='col'].blue2 h4:before {
   background: #2BAAE1;
 }
 
-.Main__OurStory__Timeline .col-2.blue3 h4 {
+.Main__OurStory__Timeline [class*='col'].blue3 h4 {
   color: #0083B7;
 }
 
-.Main__OurStory__Timeline .col-2.blue3 h4:before {
+.Main__OurStory__Timeline [class*='col'].blue3 h4:before {
   background: #0083B7;
 }
 
-.Main__OurStory__Timeline .col-2.blue4 h4 {
+.Main__OurStory__Timeline [class*='col'].blue4 h4 {
   color: #0B6386;
 }
 
-.Main__OurStory__Timeline .col-2.blue4 h4:before {
+.Main__OurStory__Timeline [class*='col'].blue4 h4:before {
   background: #0B6386;
 }
 
-.Main__OurStory__Timeline .col-2 h4 {
+.Main__OurStory__Timeline [class*='col'] h4 {
   font-size: 1.8rem;
   position: relative;
 }
 
-.Main__OurStory__Timeline .col-2 h4::before {
+.Main__OurStory__Timeline [class*='col'] h4::before {
   content: '';
   position: absolute;
   top: -6.5rem;
@@ -987,7 +987,29 @@ h1.title:before {
 @media (max-width: 576px) {
   .Main__OurStory {
     height: unset;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+  .Main__OurStory__Timeline {
+    border-top: 0;
+    border-left: solid 0.1rem rgba(51, 51, 51, 0.3);
+    padding-top: 0;
+    justify-content: space-between;
     margin-top: 4rem;
+  }
+  .Main__OurStory__Timeline [class*='col'] {
+    text-align: left;
+    font-size: 1.4rem;
+    padding-left: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  .Main__OurStory__Timeline [class*='col'] h4::before {
+    top: 0;
+    left: -2.2rem;
+    margin-left: -2.2rem;
+  }
+  .Main__OurStory__blocks {
+    display: none;
   }
 }
 
@@ -1027,6 +1049,18 @@ h1.title:before {
   .Main__Terms {
     height: unset;
     margin-top: 4rem;
+  }
+  .Main__Terms__info {
+    font-size: 1.4rem;
+  }
+  .Main__Terms__info h1 {
+    background: #2BAAE1;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    top: -2rem;
   }
 }
 

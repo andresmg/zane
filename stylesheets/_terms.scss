@@ -36,6 +36,20 @@
         &__Terms {
         height: unset;
         margin-top: 4rem;
+        
+                &__info {
+                    font-size: 1.4rem;
+                    h1 {
+                        background: $zane_blue;
+                        color: $zane_white;
+                        font-size: 2rem;
+                        position: absolute;
+                        text-align: center;
+                        padding: 2rem;
+                        top:-2rem
+                    }
+                }
+            
         }
     }
 }
