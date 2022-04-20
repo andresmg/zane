@@ -6,6 +6,8 @@
             height: calc(100vh - 18rem);
             background: url(../assets/column-bg.jpg) no-repeat center / cover;
             position: relative;
+            display: flex;
+            justify-content: center;
 
             &:before {
                 content: '';
@@ -15,6 +17,12 @@
                 width: 10rem;
                 height: calc(74vh);
                 background: $zane_black;
+            }
+
+            h1 {
+                color: $zane_white;
+                font-size: 8rem;
+                margin-top: 6rem;
             }
         }
 
@@ -88,6 +96,7 @@
                 h6 {
                     text-align: center;
                     margin-top: 2rem;
+                    font-size: 1.4rem;
                 }
 
                 img {
@@ -112,6 +121,7 @@
             &__column {
                 height: 30rem;
                 background-position: center -10rem;
+                align-items: center;
 
                 &:before {
                     content: '';
@@ -121,6 +131,10 @@
                     width: 10rem;
                     height: calc(74vh);
                     background: $zane_black;
+                }
+
+                h1 {
+                    margin-top: 0;
                 }
             }
 

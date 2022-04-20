@@ -11,15 +11,27 @@
             h1 {
                 color: $zane_blue_light;
                 font-size: 8rem;
+
+                &.dark {
+                    color: $zane_blue_dark;
+                }
             }
 
             h2 {
                 background: $zane_blue;
                 color: $zane_white;
                 font-size: 6rem;
-                padding: 2rem 4rem;
+                padding: 2rem 4rem 2rem 0;
                 margin-bottom: 4rem;
                 position: relative;
+
+                &.dark {
+                    background: $zane_blue_dark;
+
+                    &::before {
+                        background: $zane_blue_dark;
+                    }
+                }
 
                 &:before {
                     content: '';
@@ -47,14 +59,26 @@
 
             .icon {
                 text-align: center;
+                text-decoration: none;
+                color: $zane_text;
+                
                 img {
                     width: 8rem;
                     height: 8rem;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 h6 {
                     text-align: center;
                     margin-top: 2rem;
+                    font-size: 1.4rem;
+                }
+
+                &:hover {
+                    img {
+                        width: 9rem;
+                        height: 9rem;
+                    }
                 }
             }
 
@@ -84,6 +108,20 @@
 
                     span {
                     color: $zane_blue;
+                    }
+                }
+
+                &.dark {
+                    border-color: $zane_blue_dark;
+
+                    h1 {
+                        background: $zane_blue_dark;
+                    }
+
+                    h3 {
+                        span {
+                            color: $zane_blue_dark;
+                        }
                     }
                 }
             }
