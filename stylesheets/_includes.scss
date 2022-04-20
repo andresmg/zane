@@ -61,24 +61,22 @@
                 text-align: center;
                 text-decoration: none;
                 color: $zane_text;
-                
+                overflow: hidden;
+                position: relative;
+
                 img {
                     width: 8rem;
                     height: 8rem;
                     transition: all 0.3s ease-in-out;
+                    margin-top: 0;
                 }
 
                 h6 {
                     text-align: center;
                     margin-top: 2rem;
                     font-size: 1.4rem;
-                }
-
-                &:hover {
-                    img {
-                        width: 9rem;
-                        height: 9rem;
-                    }
+                    opacity: 1;
+                    transition: all 0.3s ease-in-out;
                 }
             }
 

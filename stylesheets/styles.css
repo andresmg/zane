@@ -467,21 +467,25 @@ h1.title:before {
 }
 
 .Main__Vce__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  overflow: hidden;
+  position: relative;
 }
 
 .Main__Vce__icon img {
   width: 7rem;
   height: 7rem;
   margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .Main__Vce__icon h6 {
   text-transform: uppercase;
   font-size: 1.2rem;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .Main__Vce__Video {
@@ -625,21 +629,24 @@ h1.title:before {
 }
 
 .Main__Resources__icons .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  overflow: hidden;
+  position: relative;
 }
 
 .Main__Resources__icons .icon h6 {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .Main__Resources__icons .icon img {
   width: 8rem;
   height: 8rem;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 576px) {
@@ -759,23 +766,23 @@ h1.title:before {
   text-align: center;
   text-decoration: none;
   color: #333;
+  overflow: hidden;
+  position: relative;
 }
 
 .Main__Includes__right .icon img {
   width: 8rem;
   height: 8rem;
   transition: all 0.3s ease-in-out;
+  margin-top: 0;
 }
 
 .Main__Includes__right .icon h6 {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.4rem;
-}
-
-.Main__Includes__right .icon:hover img {
-  width: 9rem;
-  height: 9rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .Main__Includes__right .order {
@@ -857,8 +864,306 @@ h1.title:before {
   }
 }
 
+.Main {
+  overflow: hidden;
+}
+
+.Main__OurStory {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+}
+
+.Main__OurStory__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Main__OurStory__info h1 {
+  margin-bottom: 4rem;
+}
+
+.Main__OurStory__Timeline {
+  border-top: solid 0.1rem rgba(51, 51, 51, 0.3);
+  margin-top: 4rem;
+  padding-top: 5rem;
+  justify-content: space-between;
+}
+
+.Main__OurStory__Timeline .col-2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.Main__OurStory__Timeline .col-2.blue1 h4 {
+  color: #70D5F8;
+}
+
+.Main__OurStory__Timeline .col-2.blue1 h4:before {
+  background: #70D5F8;
+}
+
+.Main__OurStory__Timeline .col-2.blue2 h4 {
+  color: #2BAAE1;
+}
+
+.Main__OurStory__Timeline .col-2.blue2 h4:before {
+  background: #2BAAE1;
+}
+
+.Main__OurStory__Timeline .col-2.blue3 h4 {
+  color: #0083B7;
+}
+
+.Main__OurStory__Timeline .col-2.blue3 h4:before {
+  background: #0083B7;
+}
+
+.Main__OurStory__Timeline .col-2.blue4 h4 {
+  color: #0B6386;
+}
+
+.Main__OurStory__Timeline .col-2.blue4 h4:before {
+  background: #0B6386;
+}
+
+.Main__OurStory__Timeline .col-2 h4 {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.Main__OurStory__Timeline .col-2 h4::before {
+  content: '';
+  position: absolute;
+  top: -6.5rem;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-left: -1.5rem;
+}
+
+.Main__OurStory__blocks {
+  background: #000;
+  height: 70vh;
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.Main__OurStory__blocks:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 70vh;
+  width: 300%;
+  right: -50rem;
+  background: #000;
+  z-index: -1;
+}
+
+.Main__OurStory__blocks .block {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 20rem;
+}
+
+.Main__OurStory__blocks .block:nth-child(1) {
+  margin-bottom: 4rem;
+}
+
+.Main__OurStory__blocks .block.blue {
+  background: #2BAAE1;
+}
+
+.Main__OurStory__blocks .block.dark {
+  background: #0083B7;
+}
+
+@media (max-width: 576px) {
+  .Main__OurStory {
+    height: unset;
+    margin-top: 4rem;
+  }
+}
+
+.Main {
+  overflow: hidden;
+}
+
+.Main__OurStory {
+  height: calc(100vh - 18rem);
+  display: flex;
+  align-items: center;
+}
+
+.Main__OurStory__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Main__OurStory__info h1 {
+  margin-bottom: 4rem;
+}
+
+.Main__OurStory__Timeline {
+  border-top: solid 0.1rem rgba(51, 51, 51, 0.3);
+  margin-top: 4rem;
+  padding-top: 5rem;
+  justify-content: space-between;
+}
+
+.Main__OurStory__Timeline .col-2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.Main__OurStory__Timeline .col-2.blue1 h4 {
+  color: #70D5F8;
+}
+
+.Main__OurStory__Timeline .col-2.blue1 h4:before {
+  background: #70D5F8;
+}
+
+.Main__OurStory__Timeline .col-2.blue2 h4 {
+  color: #2BAAE1;
+}
+
+.Main__OurStory__Timeline .col-2.blue2 h4:before {
+  background: #2BAAE1;
+}
+
+.Main__OurStory__Timeline .col-2.blue3 h4 {
+  color: #0083B7;
+}
+
+.Main__OurStory__Timeline .col-2.blue3 h4:before {
+  background: #0083B7;
+}
+
+.Main__OurStory__Timeline .col-2.blue4 h4 {
+  color: #0B6386;
+}
+
+.Main__OurStory__Timeline .col-2.blue4 h4:before {
+  background: #0B6386;
+}
+
+.Main__OurStory__Timeline .col-2 h4 {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.Main__OurStory__Timeline .col-2 h4::before {
+  content: '';
+  position: absolute;
+  top: -6.5rem;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-left: -1.5rem;
+}
+
+.Main__OurStory__blocks {
+  background: #000;
+  height: 70vh;
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.Main__OurStory__blocks:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 70vh;
+  width: 300%;
+  right: -50rem;
+  background: #000;
+  z-index: -1;
+}
+
+.Main__OurStory__blocks .block {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 20rem;
+}
+
+.Main__OurStory__blocks .block:nth-child(1) {
+  margin-bottom: 4rem;
+}
+
+.Main__OurStory__blocks .block.blue {
+  background: #2BAAE1;
+}
+
+.Main__OurStory__blocks .block.dark {
+  background: #0083B7;
+}
+
+@media (max-width: 576px) {
+  .Main__OurStory {
+    height: unset;
+    margin-top: 4rem;
+  }
+}
+
 html {
   font-size: 10px;
+}
+
+.icon:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../assets/download.svg) no-repeat center center/6rem;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.icon:after {
+  content: 'Donwload PDF';
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.icon:hover:after {
+  opacity: 1;
+  bottom: 0rem;
+}
+
+.icon:hover::before {
+  opacity: 1;
+}
+
+.icon:hover img {
+  margin-top: -12rem;
+}
+
+.icon:hover h6 {
+  opacity: 0;
 }
 
 .Button {
