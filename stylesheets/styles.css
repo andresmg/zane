@@ -351,47 +351,6 @@ h1.title:before {
   color: #2BAAE1;
 }
 
-.Main__Pd .Form {
-  background: #000;
-  padding: 4rem 12rem 4rem 4rem;
-}
-
-.Main__Pd .Form h1 {
-  color: #70D5F8;
-  font-size: 6rem;
-  margin-bottom: 6rem;
-}
-
-.Main__Pd .Form h1:before {
-  display: none;
-}
-
-.Main__Pd .Form p {
-  color: #70D5F8;
-}
-
-.Main__Pd .Form input {
-  border: 0;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  height: 5rem;
-}
-
-.Main__Pd .Form .btn {
-  background: #2BAAE1;
-  color: #fff;
-  border-radius: 0.8rem;
-  border: 0;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-}
-
-.Main__Pd .Form .btn:hover {
-  background: #0083B7;
-}
-
 .Main__Pd .Back {
   background: url(../assets/pd-bg.jpg) no-repeat center/cover;
   position: absolute;
@@ -1025,6 +984,8 @@ h1.title:before {
   height: calc(100vh - 18rem);
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Main__Terms__info {
@@ -1045,6 +1006,11 @@ h1.title:before {
   top: -6rem;
 }
 
+.Main__Terms .btn {
+  margin: 4rem auto 0 auto;
+  width: auto;
+}
+
 @media (max-width: 576px) {
   .Main__Terms {
     height: unset;
@@ -1061,6 +1027,82 @@ h1.title:before {
     text-align: center;
     padding: 2rem;
     top: -2rem;
+  }
+  .Main__Terms .btn {
+    margin-bottom: 4rem;
+  }
+}
+
+.contact {
+  background: url(../assets/terms_bg.jpg) no-repeat center center/cover;
+}
+
+.Main {
+  overflow: hidden;
+}
+
+.Main__Contact {
+  height: calc(100vh - 18rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #000;
+  padding: 4rem !important;
+}
+
+.Main__Contact a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.Main__Contact a:hover {
+  color: #70D5F8;
+}
+
+.Main__Contact__rrss {
+  margin-top: 4rem;
+}
+
+.Main__Contact__rrss .tel, .Main__Contact__rrss .instagram, .Main__Contact__rrss .mail {
+  display: flex;
+  align-items: center;
+}
+
+.Main__Contact__rrss .tel:before, .Main__Contact__rrss .instagram:before, .Main__Contact__rrss .mail:before {
+  content: '';
+  display: inline-block;
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.Main__Contact__rrss .tel:before {
+  background: url(../assets/phone.svg) no-repeat center center/contain;
+}
+
+.Main__Contact__rrss .instagram:before {
+  background: url(../assets/rrss.svg) no-repeat center center/contain;
+}
+
+.Main__Contact__rrss .mail {
+  margin-bottom: 3rem;
+}
+
+.Main__Contact__rrss .mail:before {
+  background: url(../assets/mail.svg) no-repeat center center/contain;
+}
+
+@media (max-width: 576px) {
+  .Main__Contact {
+    height: unset;
+  }
+  .Main__Contact h1 {
+    font-size: 5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .Main__Contact__rrss .tel {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1129,6 +1171,20 @@ html {
   color: #fff;
 }
 
+.btn {
+  background: #2BAAE1;
+  color: #fff;
+  border-radius: 0.8rem;
+  border: 0;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background: #0083B7;
+}
+
 .Header {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
   height: 9rem;
@@ -1157,6 +1213,33 @@ html {
 
 main {
   position: relative;
+}
+
+.Form {
+  background: #000;
+  padding: 4rem 12rem 4rem 4rem;
+}
+
+.Form h1 {
+  color: #70D5F8;
+  font-size: 6rem;
+  margin-bottom: 6rem;
+}
+
+.Form h1:before {
+  display: none;
+}
+
+.Form p {
+  color: #70D5F8;
+}
+
+.Form .form-control {
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  height: 6rem;
 }
 
 .Footer {

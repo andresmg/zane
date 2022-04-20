@@ -9,6 +9,8 @@
         height: calc(100vh - 18rem);
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
         &__info {
             color: $zane_white;
@@ -26,6 +28,12 @@
                 padding: 2rem;
                 top:-6rem
             }
+        }
+
+
+        .btn {
+            margin: 4rem auto 0 auto;
+            width: auto;
         }
     }
 }
@@ -48,6 +56,11 @@
                         padding: 2rem;
                         top:-2rem
                     }
+                }
+
+
+                .btn {
+                    margin-bottom: 4rem;
                 }
             
         }
