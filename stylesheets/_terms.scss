@@ -1,123 +1,30 @@
-
+.terms {
+    background: url(../assets/terms_bg.jpg) no-repeat center center / cover;
+}
 
 .Main {
     overflow: hidden;
 
-    &__OurStory {
+    &__Terms {
         height: calc(100vh - 18rem);
         display: flex;
         align-items: center;
 
         &__info {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            h1 {
-                margin-bottom: 4rem;
-            }
-        }
-
-        &__Timeline {
-            border-top: solid 0.1rem rgba($zane_text, 0.3);
-            margin-top: 4rem;
-            padding-top: 5rem;
-            justify-content: space-between;
-
-            .col-2 {
-                text-align: center;
-                font-size: 1.4rem;
-
-                &.blue1 {
-                    h4 {
-                        color: $zane_blue_light;
-                            &:before {
-                                background: $zane_blue_light;
-                            }
-                    }
-                }
-
-                &.blue2 {
-                    h4 {
-                        color: $zane_blue;
-                        &:before {
-                            background: $zane_blue;
-                        }
-                    }
-                }
-
-                &.blue3 {
-                    h4 {
-                        color: $zane_blue_dark;
-                        &:before {
-                            background: $zane_blue_dark;
-                        }
-                    }
-                }
-
-                &.blue4 {
-                    h4 {
-                        color: #0B6386;
-                        &:before {
-                            background: #0B6386;
-                        }
-                    }
-                }
-
-                h4 {
-                    font-size: 1.8rem;
-                    position: relative;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: -6.5rem;
-                        left: 50%;
-                        width: 3rem;
-                        height: 3rem;
-                        margin-left: -1.5rem;
-                    }
-                }
-            }
-        }
-
-        &__blocks {
-            background: $zane_black;
-            height: 70vh;
-            display: block;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+            color: $zane_white;
+            border: solid 0.2rem $zane_blue;
+            padding: 4rem;
+            padding-top: 8rem;
             position: relative;
 
-            &:before {
-                content: '';
-                display: block;
+            h1 {
+                background: $zane_blue;
+                color: $zane_white;
+                font-size: 6rem;
                 position: absolute;
-                top: 0;
-                height: 70vh;
-                width: 300%;
-                right: -50rem;
-                background: $zane_black;
-                z-index: -1;
-            }
-
-            .block {
-                width: 20rem;
-                height: 20rem;
-                margin-right: 20rem;
-
-                &:nth-child(1) {
-                    margin-bottom: 4rem;
-                }
-
-                &.blue {
-                    background: $zane_blue;
-                }
-
-                &.dark {
-                    background: $zane_blue_dark;
-                }
+                text-align: center;
+                padding: 2rem;
+                top:-6rem
             }
         }
     }
@@ -126,7 +33,7 @@
 @media (max-width: 576px) {
 
     .Main {
-        &__OurStory {
+        &__Terms {
         height: unset;
         margin-top: 4rem;
         }
