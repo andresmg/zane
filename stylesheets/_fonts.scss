@@ -12,9 +12,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
+
     &.title {
-            font-size: 6rem;
-            color: $zane_blue_dark;
+            font-size: 5.6rem;
+            color: $zane_blue;
             font-weight: 600;
             position: relative;
     
@@ -25,7 +26,23 @@ h1 {
                 left: 0;
                 width: 20rem;
                 height: 0.5rem;
-                background-color: $zane_blue_dark;
+                background-color: $zane_blue;
+            }
+
+            &.light {
+                color: $zane_blue_light;
+
+                &:before {
+                    background-color: $zane_blue_light;
+                }
+            }
+
+            &.dark {
+                color: $zane_blue_dark;
+
+                &:before {
+                    background-color: $zane_blue_dark;
+                }
             }
         
     }

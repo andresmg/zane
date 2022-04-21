@@ -44,16 +44,44 @@
                 &.topbtn {
                     background: $zane_black url(../assets/students_whhite.svg) no-repeat center 2rem / 14rem;
 
+                    &:hover {
+                        background-color: $zane_blue;
+                    }
+
                     &.active {
                         background: $zane_blue url(../assets/student.svg) no-repeat center 2rem / 14rem;
+
+                        &.light {
+                            background: $zane_blue_light url(../assets/student.svg) no-repeat center 2rem / 14rem;
+                        }
+                    }
+
+                    &.light {
+                        &:hover {
+                            background-color: $zane_blue_light;
+                        }
                     }
                 }
 
                 &.bttmbtn {
                     background: $zane_black url(../assets/teacher_whhite.svg) no-repeat center 6rem / 14rem;
 
+                    &:hover {
+                        background-color: $zane_blue;
+                    }
+
                     &.active {
                         background: $zane_blue url(../assets/teacher.svg) no-repeat center 6rem / 14rem;
+
+                        &.light {
+                            background: $zane_blue_light url(../assets/teacher.svg) no-repeat center 6rem / 14rem;
+                        }
+                    }
+
+                    &.light {
+                        &:hover {
+                            background-color: $zane_blue_light;
+                        }
                     }
                 }
 
@@ -64,6 +92,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    background-color: $zane_blue_light;
                 }
 
                 p {
@@ -90,7 +119,7 @@
             .icon {
                 text-align: center;
                 text-decoration: none;
-                color: $zane_text;
+                color: $zane_blue;
                 overflow: hidden;
                 position: relative;
 
@@ -99,6 +128,10 @@
                     margin-top: 2rem;
                     font-size: 1.4rem;
                     transition: all 0.3s ease-in-out;
+
+                    &.light {
+                        color: $zane_blue_light;
+                    }
                 }
 
                 img {

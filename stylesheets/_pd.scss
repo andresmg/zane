@@ -5,26 +5,41 @@
     align-items: center;
     justify-content: center;
 
-    &__info {
-        padding-right: 4rem;
-    }
+        &__info {
+            padding-right: 4rem;
 
-    p {
-        font-size: 2rem;
-        margin-top: 4rem;
+            h1 {
+                color: $zane_blue_mid;
 
-        span {
-            color: $zane_blue;
+                &:before {
+                    background-color: $zane_blue_mid;
+                }
+            }
         }
-    }
 
-    .Back {
-        background: url(../assets/pd-bg.jpg) no-repeat center / cover;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: calc(100vh - 18rem);
-    }
+        p {
+            font-size: 2rem;
+            margin-top: 4rem;
+
+            span {
+                color: $zane_blue_mid;
+            }
+        }
+
+        .Back {
+            background: url(../assets/pd-bg.jpg) no-repeat center / cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: calc(100vh - 18rem);
+        }
+
+        .Form {
+            h1, p {
+                color: $zane_blue_mid;
+                font-weight: 600;
+            }
+        }
     }
 }
 

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="Header container-fluid">
@@ -36,7 +37,7 @@
       <div class="Main__Includes container">
         <div class="row">
           <div class="col-12 col-sm-6 Main__Includes__left">
-            <h1>WRS</h1>
+            <h1 class="dark">WRS</h1>
             <h2>What we include What’s the cost</h2>
             <p>
               EduClick specialise in VCE Vocational Major with a direct focus on
@@ -53,16 +54,16 @@
           <div class="col-12 col-sm-6 Main__Includes__right">
             <div class="row justify-content-around">
               <a href="/" class="col-4 icon">
-                <img src="assets/include.svg" alt="What we include" />
-                <h6>What we include</h6>
+                <img src="assets/include_blue.svg" alt="What we include" />
+                <h6 class="blue">What we include</h6>
               </a>
               <a href="/" class="col-4 icon">
-                <img src="assets/list.svg" alt="Costs" />
-                <h6>Costs</h6>
+                <img src="assets/list_blue.svg" alt="Costs" />
+                <h6 class="blue">Costs</h6>
               </a>
               <a href="/" class="col-4 icon">
-                <img src="assets/calc.svg" alt="What does eduClick do?" />
-                <h6>What does eduClick do?</h6>
+                <img src="assets/calc_blue.svg" alt="What does eduClick do?" />
+                <h6 class="blue">What does eduClick do?</h6>
               </a>
               <div class="col-12">
                 <div class="order">
@@ -88,6 +89,10 @@
           <small>Copyright © 2022 Educlick. All Rights Reserved</small>
         </div>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init()
+      </script>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

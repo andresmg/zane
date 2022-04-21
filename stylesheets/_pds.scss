@@ -37,18 +37,18 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            color: $zane_blue;
-            border-color: $zane_blue;;
+            color: $zane_blue_light;
+            border-color: $zane_blue_light;
 
             .icons {
                 top:65%;
                 
                 &__book {
-                    background: $zane_blue url(../assets/book_white.svg) no-repeat center / 12rem;
+                    background: $zane_blue_light url(../assets/book_white.svg) no-repeat center / 12rem;
                 }
     
                 &__dollar {
-                    background: $zane_blue url(../assets/dollar_white.svg) no-repeat center / 12rem;
+                    background: $zane_blue_light url(../assets/dollar_white.svg) no-repeat center / 12rem;
                 }
             }
 
@@ -84,10 +84,37 @@
 
             &__book {
                 background: $zane_blue_light url(../assets/book.svg) no-repeat center / 12rem;
+
+                &.blue {
+                    background: $zane_blue url(../assets/book.svg) no-repeat center / 12rem;
+                }
             }
 
             &__dollar {
                 background: $zane_blue_light url(../assets/dollar.svg) no-repeat center / 12rem;
+
+                &.blue {
+                    background: $zane_blue url(../assets/dollar.svg) no-repeat center / 12rem;
+                }
+            }
+        }
+
+        &.blue {
+            border-color: $zane-blue;
+
+            &:hover {
+                color: $zane-blue;
+
+                .icons {
+                    
+                    &__book {
+                        background: $zane_blue url(../assets/book_white.svg) no-repeat center / 12rem;
+                    }
+        
+                    &__dollar {
+                        background: $zane_blue url(../assets/dollar_white.svg) no-repeat center / 12rem;
+                    }
+                }
             }
         }
     }

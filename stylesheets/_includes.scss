@@ -9,11 +9,14 @@
             padding-right: 4rem;
 
             h1 {
-                color: $zane_blue_light;
                 font-size: 8rem;
 
                 &.dark {
-                    color: $zane_blue_dark;
+                    color: $zane_blue;
+                }
+
+                &.light {
+                    color: $zane_blue_light;
                 }
             }
 
@@ -30,6 +33,14 @@
 
                     &::before {
                         background: $zane_blue_dark;
+                    }
+                }
+
+                &.light {
+                    background: $zane_blue_light;
+
+                    &::before {
+                        background: $zane_blue_light;
                     }
                 }
 
@@ -77,6 +88,14 @@
                     font-size: 1.4rem;
                     opacity: 1;
                     transition: all 0.3s ease-in-out;
+
+                    &.light {
+                        color: $zane_blue_light;
+                    }
+
+                    &.blue {
+                        color: $zane_blue;
+                    }
                 }
             }
 
@@ -119,6 +138,20 @@
                     h3 {
                         span {
                             color: $zane_blue_dark;
+                        }
+                    }
+                }
+
+                &.light {
+                    border-color: $zane_blue_light;
+
+                    h1 {
+                        background: $zane_blue_light;
+                    }
+
+                    h3 {
+                        span {
+                            color: $zane_blue_light;
                         }
                     }
                 }

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="Header container-fluid">
@@ -43,13 +44,13 @@
               <div class="col-sm-6 col-12">
                 <div class="row align-items-center Main__Resources__buttons">
                   <div
-                    class="col-sm-12 col-6 button active topbtn"
+                    class="col-sm-12 col-6 button active topbtn light"
                     onclick="showTop()"
                   >
                     <p>STUDENT WORKBOOKS</p>
                   </div>
                   <div
-                    class="col-sm-12 col-6 button bttmbtn"
+                    class="col-sm-12 col-6 button bttmbtn light"
                     onclick="showBottom()"
                   >
                     <p>TEACHER RESOURCES</p>
@@ -60,7 +61,7 @@
           </div>
           <div class="col-12 col-sm-6 Main__Resources__info">
             <div id="top" class="d-block">
-              <h1 class="title">Student Workbooks</h1>
+              <h1 class="title light">Student Workbooks</h1>
               <p>
                 Our VCE Vocational Major Work-Related Skills student workbooks
                 have been designed by teachers for teachers. With all key skills
@@ -74,38 +75,41 @@
                 structured resource.
               </p>
               <div class="row Main__Resources__icons">
-                <a href="/" class="col-sm-3 col-6 icon">
-                  <img src="assets/notebook.svg" alt="STUDENT WORKBOOKS" />
-                  <h6>STUDENT WORKBOOK</h6>
-                </a>
-                <a href="/" class="col-sm-3 col-6 icon">
+                <a href="/" class="col-sm-3 col-6 icon light">
                   <img
-                    src="assets/sketch.svg"
+                    src="assets/notebook_light.svg"
+                    alt="STUDENT WORKBOOKS"
+                  />
+                  <h6 class="light">STUDENT WORKBOOK</h6>
+                </a>
+                <a href="/" class="col-sm-3 col-6 icon light">
+                  <img
+                    src="assets/sketch_light.svg"
                     alt="VCAA CONTENT MAPPING
                 "
                   />
-                  <h6>VCAA CONTENT MAPPING</h6>
+                  <h6 class="light">VCAA CONTENT MAPPING</h6>
                 </a>
-                <a href="/" class="col-sm-3 col-6 icon">
+                <a href="/" class="col-sm-3 col-6 icon light">
                   <img
-                    src="assets/workbook.svg"
-                    alt="TEACHER WORKBOOK
+                    src="assets/workbook_light.svg"
+                    alt="TEACHER WORKBOOK_light
                 "
                   />
-                  <h6>TEACHER WORKBOOK</h6>
+                  <h6 class="light">TEACHER WORKBOOK</h6>
                 </a>
-                <a href="/" class="col-sm-3 col-6 icon">
+                <a href="/" class="col-sm-3 col-6 icon light">
                   <img
-                    src="assets/news.svg"
+                    src="assets/news_light.svg"
                     alt="TEACHER KIT INCLUSIONS
                 "
                   />
-                  <h6>TEACHER KIT INCLUSIONS</h6>
+                  <h6 class="light">TEACHER KIT INCLUSIONS</h6>
                 </a>
               </div>
             </div>
             <div id="bottom" class="d-none">
-              <h1 class="title">Teacher Resources</h1>
+              <h1 class="title light">Teacher Resources</h1>
               <p>
                 Teacher resources allow teachers to focus on what they do best,
                 teach. We supply everything a teacher needs including their own
@@ -122,33 +126,36 @@
               </p>
 
               <div class="row Main__Resources__icons">
-                <a href="/" class="col-sm-3 icon">
-                  <img src="assets/notebook.svg" alt="STUDENT WORKBOOKS" />
-                  <h6>STUDENT WORKBOOK</h6>
-                </a>
-                <a href="/" class="col-sm-3 icon">
+                <a href="/" class="col-sm-3 icon light">
                   <img
-                    src="assets/sketch.svg"
+                    src="assets/notebook_light.svg"
+                    alt="STUDENT WORKBOOKS"
+                  />
+                  <h6 class="light">STUDENT WORKBOOK</h6>
+                </a>
+                <a href="/" class="col-sm-3 icon light">
+                  <img
+                    src="assets/sketch_light.svg"
                     alt="VCAA CONTENT MAPPING
                 "
                   />
-                  <h6>VCAA CONTENT MAPPING</h6>
+                  <h6 class="light">VCAA CONTENT MAPPING</h6>
                 </a>
-                <a href="/" class="col-sm-3 icon">
+                <a href="/" class="col-sm-3 icon light">
                   <img
-                    src="assets/workbook.svg"
+                    src="assets/workbook_light.svg"
                     alt="TEACHER WORKBOOK
                 "
                   />
-                  <h6>TEACHER WORKBOOK</h6>
+                  <h6 class="light">TEACHER WORKBOOK</h6>
                 </a>
-                <a href="/" class="col-sm-3 icon">
+                <a href="/" class="col-sm-3 icon light">
                   <img
-                    src="assets/news.svg"
+                    src="assets/news_light.svg"
                     alt="TEACHER KIT INCLUSIONS
                 "
                   />
-                  <h6>TEACHER KIT INCLUSIONS</h6>
+                  <h6 class="light">TEACHER KIT INCLUSIONS</h6>
                 </a>
               </div>
             </div>
@@ -169,6 +176,10 @@
           <small>Copyright © 2022 Educlick. All Rights Reserved</small>
         </div>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init()
+      </script>
     </footer>
     <script src="js/resources.js"></script>
     <script

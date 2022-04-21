@@ -4,6 +4,7 @@
 @import 'pds';
 @import 'pd';
 @import 'vce';
+@import 'wrs';
 @import 'resources';
 @import 'includes';
 @import 'ourstory';
@@ -16,6 +17,34 @@ html {
 
 .icon {
 
+    &.light {
+        h6 {
+            color: $zane_blue_light;
+        }
+        
+        &:before {
+            background: url(../assets/download_light.svg) no-repeat center center / 6rem;
+        }
+
+        &:after {
+            color: $zane_blue_light;
+        }
+    }
+
+    &.dark {
+        h6 {
+            color: $zane_blue_dark;
+        }
+
+        &:before {
+            background: url(../assets/download_dark.svg) no-repeat center center / 6rem;
+        }
+
+        &:after {
+            color: $zane_blue_dark;
+        }
+    }
+
     &:before {
         content: '';
         display: block;
@@ -24,7 +53,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        background: url(../assets/download.svg) no-repeat center center / 6rem;
+        background: url(../assets/download_blue.svg) no-repeat center center / 6rem;
         transition: all 0.3s ease-in-out;
         opacity: 0;
     }
@@ -40,7 +69,7 @@ html {
         position: absolute;
         font-size: 1.2rem;
         font-weight: 600;
-        color: $zane_text;
+        color: $zane_blue;
     }
 
     &:hover {

@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1.title {
-  font-size: 6rem;
-  color: #0083B7;
+  font-size: 5.6rem;
+  color: #2BAAE1;
   font-weight: 600;
   position: relative;
 }
@@ -24,6 +24,22 @@ h1.title:before {
   left: 0;
   width: 20rem;
   height: 0.5rem;
+  background-color: #2BAAE1;
+}
+
+h1.title.light {
+  color: #70D5F8;
+}
+
+h1.title.light:before {
+  background-color: #70D5F8;
+}
+
+h1.title.dark {
+  color: #0083B7;
+}
+
+h1.title.dark:before {
   background-color: #0083B7;
 }
 
@@ -224,8 +240,8 @@ h1.title:before {
 }
 
 .Main__Pds__cards:hover {
-  color: #2BAAE1;
-  border-color: #2BAAE1;
+  color: #70D5F8;
+  border-color: #70D5F8;
 }
 
 .Main__Pds__cards:hover .icons {
@@ -233,11 +249,11 @@ h1.title:before {
 }
 
 .Main__Pds__cards:hover .icons__book {
-  background: #2BAAE1 url(../assets/book_white.svg) no-repeat center/12rem;
+  background: #70D5F8 url(../assets/book_white.svg) no-repeat center/12rem;
 }
 
 .Main__Pds__cards:hover .icons__dollar {
-  background: #2BAAE1 url(../assets/dollar_white.svg) no-repeat center/12rem;
+  background: #70D5F8 url(../assets/dollar_white.svg) no-repeat center/12rem;
 }
 
 .Main__Pds__cards:hover:before {
@@ -274,8 +290,32 @@ h1.title:before {
   background: #70D5F8 url(../assets/book.svg) no-repeat center/12rem;
 }
 
+.Main__Pds__cards .icons__book.blue {
+  background: #2BAAE1 url(../assets/book.svg) no-repeat center/12rem;
+}
+
 .Main__Pds__cards .icons__dollar {
   background: #70D5F8 url(../assets/dollar.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards .icons__dollar.blue {
+  background: #2BAAE1 url(../assets/dollar.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards.blue {
+  border-color: #2BAAE1;
+}
+
+.Main__Pds__cards.blue:hover {
+  color: #2BAAE1;
+}
+
+.Main__Pds__cards.blue:hover .icons__book {
+  background: #2BAAE1 url(../assets/book_white.svg) no-repeat center/12rem;
+}
+
+.Main__Pds__cards.blue:hover .icons__dollar {
+  background: #2BAAE1 url(../assets/dollar_white.svg) no-repeat center/12rem;
 }
 
 .Main__Pds .Cta {
@@ -342,13 +382,21 @@ h1.title:before {
   padding-right: 4rem;
 }
 
+.Main__Pd__info h1 {
+  color: #0483b6;
+}
+
+.Main__Pd__info h1:before {
+  background-color: #0483b6;
+}
+
 .Main__Pd p {
   font-size: 2rem;
   margin-top: 4rem;
 }
 
 .Main__Pd p span {
-  color: #2BAAE1;
+  color: #0483b6;
 }
 
 .Main__Pd .Back {
@@ -357,6 +405,11 @@ h1.title:before {
   top: 0;
   right: 0;
   height: calc(100vh - 18rem);
+}
+
+.Main__Pd .Form h1, .Main__Pd .Form p {
+  color: #0483b6;
+  font-weight: 600;
 }
 
 @media (max-width: 576px) {
@@ -497,6 +550,10 @@ h1.title:before {
   }
 }
 
+h1.blue {
+  color: #2BAAE1;
+}
+
 .Main__Resources {
   height: calc(100vh - 18rem);
 }
@@ -546,16 +603,40 @@ h1.title:before {
   background: #000 url(../assets/students_whhite.svg) no-repeat center 2rem/14rem;
 }
 
+.Main__Resources__buttons .button.topbtn:hover {
+  background-color: #2BAAE1;
+}
+
 .Main__Resources__buttons .button.topbtn.active {
   background: #2BAAE1 url(../assets/student.svg) no-repeat center 2rem/14rem;
+}
+
+.Main__Resources__buttons .button.topbtn.active.light {
+  background: #70D5F8 url(../assets/student.svg) no-repeat center 2rem/14rem;
+}
+
+.Main__Resources__buttons .button.topbtn.light:hover {
+  background-color: #70D5F8;
 }
 
 .Main__Resources__buttons .button.bttmbtn {
   background: #000 url(../assets/teacher_whhite.svg) no-repeat center 6rem/14rem;
 }
 
+.Main__Resources__buttons .button.bttmbtn:hover {
+  background-color: #2BAAE1;
+}
+
 .Main__Resources__buttons .button.bttmbtn.active {
   background: #2BAAE1 url(../assets/teacher.svg) no-repeat center 6rem/14rem;
+}
+
+.Main__Resources__buttons .button.bttmbtn.active.light {
+  background: #70D5F8 url(../assets/teacher.svg) no-repeat center 6rem/14rem;
+}
+
+.Main__Resources__buttons .button.bttmbtn.light:hover {
+  background-color: #70D5F8;
 }
 
 .Main__Resources__buttons .button.active {
@@ -565,6 +646,7 @@ h1.title:before {
 
 .Main__Resources__buttons .button:hover {
   cursor: pointer;
+  background-color: #70D5F8;
 }
 
 .Main__Resources__buttons .button p {
@@ -590,7 +672,7 @@ h1.title:before {
 .Main__Resources__icons .icon {
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: #2BAAE1;
   overflow: hidden;
   position: relative;
 }
@@ -600,6 +682,10 @@ h1.title:before {
   margin-top: 2rem;
   font-size: 1.4rem;
   transition: all 0.3s ease-in-out;
+}
+
+.Main__Resources__icons .icon h6.light {
+  color: #70D5F8;
 }
 
 .Main__Resources__icons .icon img {
@@ -674,12 +760,15 @@ h1.title:before {
 }
 
 .Main__Includes__left h1 {
-  color: #70D5F8;
   font-size: 8rem;
 }
 
 .Main__Includes__left h1.dark {
-  color: #0083B7;
+  color: #2BAAE1;
+}
+
+.Main__Includes__left h1.light {
+  color: #70D5F8;
 }
 
 .Main__Includes__left h2 {
@@ -697,6 +786,14 @@ h1.title:before {
 
 .Main__Includes__left h2.dark::before {
   background: #0083B7;
+}
+
+.Main__Includes__left h2.light {
+  background: #70D5F8;
+}
+
+.Main__Includes__left h2.light::before {
+  background: #70D5F8;
 }
 
 .Main__Includes__left h2:before {
@@ -744,6 +841,14 @@ h1.title:before {
   transition: all 0.3s ease-in-out;
 }
 
+.Main__Includes__right .icon h6.light {
+  color: #70D5F8;
+}
+
+.Main__Includes__right .icon h6.blue {
+  color: #2BAAE1;
+}
+
 .Main__Includes__right .order {
   text-align: center;
   width: 50%;
@@ -784,6 +889,18 @@ h1.title:before {
 
 .Main__Includes__right .order.dark h3 span {
   color: #0083B7;
+}
+
+.Main__Includes__right .order.light {
+  border-color: #70D5F8;
+}
+
+.Main__Includes__right .order.light h1 {
+  background: #70D5F8;
+}
+
+.Main__Includes__right .order.light h3 span {
+  color: #70D5F8;
 }
 
 @media (max-width: 576px) {
@@ -1110,6 +1227,30 @@ html {
   font-size: 10px;
 }
 
+.icon.light h6 {
+  color: #70D5F8;
+}
+
+.icon.light:before {
+  background: url(../assets/download_light.svg) no-repeat center center/6rem;
+}
+
+.icon.light:after {
+  color: #70D5F8;
+}
+
+.icon.dark h6 {
+  color: #0083B7;
+}
+
+.icon.dark:before {
+  background: url(../assets/download_dark.svg) no-repeat center center/6rem;
+}
+
+.icon.dark:after {
+  color: #0083B7;
+}
+
 .icon:before {
   content: '';
   display: block;
@@ -1118,7 +1259,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../assets/download.svg) no-repeat center center/6rem;
+  background: url(../assets/download_blue.svg) no-repeat center center/6rem;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 }
@@ -1134,7 +1275,7 @@ html {
   position: absolute;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #333;
+  color: #2BAAE1;
 }
 
 .icon:hover:after {
