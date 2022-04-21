@@ -10,7 +10,6 @@
             position: relative;
             text-decoration: none;
             color: $zane_text;
-            transition: all 0.3s ease-in-out;
 
             &.pds {
                 background: url(../assets/home_pds.svg) no-repeat center / 20rem;
@@ -48,6 +47,7 @@
 
             &:hover {
                 background-size: 21rem;
+                transition: all 0.3s ease-in-out !important;
             }
         }
 
