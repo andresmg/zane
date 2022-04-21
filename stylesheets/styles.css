@@ -57,14 +57,15 @@ h1.title.dark:before {
 }
 
 .Main__Home__card {
-  height: 32rem;
+  height: 22rem;
   position: relative;
   text-decoration: none;
   color: #333;
+  margin-bottom: 2rem;
 }
 
 .Main__Home__card.pds {
-  background: url(../assets/home_pds.svg) no-repeat center/20rem;
+  background: url(../assets/home_pds.svg) no-repeat center top/17rem;
 }
 
 .Main__Home__card.pds:hover {
@@ -72,7 +73,7 @@ h1.title.dark:before {
 }
 
 .Main__Home__card.wrs {
-  background: url(../assets/home_wrs.svg) no-repeat center/20rem;
+  background: url(../assets/home_wrs.svg) no-repeat center top/17rem;
 }
 
 .Main__Home__card.wrs:hover {
@@ -80,7 +81,7 @@ h1.title.dark:before {
 }
 
 .Main__Home__card.vce {
-  background: url(../assets/home_vce.svg) no-repeat center/20rem;
+  background: url(../assets/home_vce.svg) no-repeat center top/17rem;
 }
 
 .Main__Home__card.vce:hover {
@@ -88,7 +89,7 @@ h1.title.dark:before {
 }
 
 .Main__Home__card.pd {
-  background: url(../assets/home_pd.svg) no-repeat center/20rem;
+  background: url(../assets/home_pd.svg) no-repeat center top/17rem;
 }
 
 .Main__Home__card.pd:hover {
@@ -102,7 +103,7 @@ h1.title.dark:before {
 }
 
 .Main__Home__card:hover {
-  background-size: 21rem;
+  background-size: 18rem;
   transition: all 0.3s ease-in-out !important;
 }
 
@@ -227,12 +228,12 @@ h1.title.dark:before {
 
 .Main__Pds__cards {
   width: 36rem;
-  height: 30rem;
+  height: 24rem;
   border: solid 0.4rem #70D5F8;
   position: relative;
   text-align: center;
   font-size: 2.8rem;
-  padding-top: 18rem;
+  padding-top: 12rem;
   margin-top: 4rem;
   text-decoration: none;
   color: #333;
@@ -245,7 +246,7 @@ h1.title.dark:before {
 }
 
 .Main__Pds__cards:hover .icons {
-  top: 65%;
+  top: 55%;
 }
 
 .Main__Pds__cards:hover .icons__book {
@@ -281,7 +282,7 @@ h1.title.dark:before {
   left: 50%;
   margin-left: -9rem;
   top: 50%;
-  margin-top: -24rem;
+  margin-top: -20rem;
   font-size: 2.8rem;
   transition: all 0.3s ease-in-out;
 }
@@ -1116,11 +1117,11 @@ h1.blue {
 .Main__Terms__info h1 {
   background: #2BAAE1;
   color: #fff;
-  font-size: 6rem;
+  font-size: 3rem;
   position: absolute;
   text-align: center;
-  padding: 2rem;
-  top: -6rem;
+  padding: 1.4rem  2rem;
+  top: -3rem;
 }
 
 .Main__Terms .btn {

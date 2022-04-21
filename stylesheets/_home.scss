@@ -6,34 +6,35 @@
     justify-content: center;
 
         &__card {
-            height: 32rem;
+            height: 22rem;
             position: relative;
             text-decoration: none;
             color: $zane_text;
+            margin-bottom: 2rem;
 
             &.pds {
-                background: url(../assets/home_pds.svg) no-repeat center / 20rem;
+                background: url(../assets/home_pds.svg) no-repeat center top / 17rem;
                 &:hover {
                     color: #88d3f3;
                 }
             }
 
             &.wrs {
-                background: url(../assets/home_wrs.svg) no-repeat center / 20rem;
+                background: url(../assets/home_wrs.svg) no-repeat center top / 17rem;
                 &:hover {
                     color: #2baae1;
                 }
             }
 
             &.vce {
-                background: url(../assets/home_vce.svg) no-repeat center / 20rem;
+                background: url(../assets/home_vce.svg) no-repeat center top / 17rem;
                 &:hover {
                     color: #0b6386;
                 }
             }
 
             &.pd {
-                background: url(../assets/home_pd.svg) no-repeat center / 20rem;
+                background: url(../assets/home_pd.svg) no-repeat center top / 17rem;
                 &:hover {
                     color: #0483b6;
                 }
@@ -46,7 +47,7 @@
             }
 
             &:hover {
-                background-size: 21rem;
+                background-size: 18rem;
                 transition: all 0.3s ease-in-out !important;
             }
         }
